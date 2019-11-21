@@ -1,0 +1,12 @@
+
+<%= link_to 'Create a New Ingredient', new_ingredient_path %>
+
+
+<h1>These are the available ingredients:</h1>
+
+<ul>
+  <% @ingredients.each do |ingredient|%>
+    <li><%= ingredient.name %><%= button_to '❌ Delete' %></li>
+  <% end %>
+</ul>
+
